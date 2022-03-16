@@ -1,0 +1,70 @@
+/* Import Colors */
+/* Import Home */
+.text-buy {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ff4043;
+}
+
+.btn-comprar {
+  padding: 10px 15px;
+  border: 1px solid #FF0000;
+  background-color: #ffff44;
+}
+
+.texts h1 {
+  color: #ff4043;
+  font-size: 34px;
+  font-family: Arial;
+}
+.texts p {
+  color: #865435;
+  font-size: 22px;
+  font-family: sans-serif;
+}
+
+.botao {
+  background-color: #865435;
+  color: #ffffff;
+  width: 300px;
+  height: 50px;
+}
+
+.lista ul {
+  background-color: darkgreen;
+}
+.lista li {
+  background-color: blueviolet;
+  color: #ffffff;
+}
+
+.btn, .btn-roxo {
+  width: 300px;
+  height: 50px;
+  cursor: pointer;
+}
+.btn:hover, .btn-roxo:hover {
+  background-color: #865435;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.btn, .btn-roxo {
+  width: 150px;
+  padding: 10;
+  display: block;
+  margin-top: 5px;
+}
+.btn.btn-amarelo, .btn-amarelo.btn-roxo {
+  background-color: yellow;
+}
+.btn.btn-verde, .btn-verde.btn-roxo {
+  background-color: forestgreen;
+}
+
+.btn-roxo {
+  background-color: purple;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,81 @@
+/* Import Colors */
+@import "./colors/colors.scss";
+
+/* Import Home */
+@import "./pages/home.scss";
+
+//MIXIN - Fubções
+@mixin text-style($color, $font-size, $font-family){
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;
+}
+
+
+$btn-color: #865435;
+$fonte: #ffffff;
+$largura: 300px;
+$altura: 50px;
+
+.texts{
+    h1{
+        @include text-style($primary-color, 34px, Arial)
+    }
+    p{
+        @include text-style($btn-color, 22px, sans-serif)
+    }
+}
+
+
+.botao{
+    background-color: $btn-color;
+    color: $fonte;
+    width: $largura;
+    height: $altura;
+}
+
+//NESTING
+.lista{
+    ul{
+        background-color: darkgreen;
+    }
+    li{
+        background-color: blueviolet;
+        color: $fonte;
+    }
+}
+
+.btn{
+    width: $largura;
+    height: $altura;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $btn-color;
+        color: $fonte;
+        transition: 0.5s;
+    }
+}
+
+.btn{
+    width: 150px;
+    padding: 10;
+    display: block;
+    margin-top: 5px;
+
+
+    &.btn-amarelo{
+        background-color: yellow;
+    }
+
+    &.btn-verde{
+        background-color: forestgreen;
+    }
+
+}
+
+.btn-roxo{
+    @extend .btn;
+    background-color: purple;
+    color: #ffffff;
+}
